@@ -1,10 +1,10 @@
 # .zshrc(jbassin)
 
+# init sheldon (package manager)
+eval "$(sheldon source)"
+
 # PATH modifications
 export PATH="$PATH:/Users/jbassin/Library/Application Support/JetBrains/Toolbox/scripts"
 
-
 # Evals
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(sheldon source)"
-
