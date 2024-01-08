@@ -10,8 +10,8 @@ SOURCES=(
 
 for FILE ($SOURCES); do
     SRC="$HOME/.config/zsh/$FILE.zsh"
-    if [[ -a "$file" ]]; then
-        source "$file"
+    if [[ -a "$SRC" ]]; then
+        source "$SRC"
     fi
 done
 
