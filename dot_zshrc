@@ -5,7 +5,7 @@ eval "$(sheldon source)"
 
 # load sources
 typeset -a sources
-sources+="~/.config/zsh/chezmoi.zsh"
+sources+="$HOME/.config/zsh/chezmoi.zsh"
 
 for file in $sources[@]; do
     if [[ -a "$file" ]]; then
