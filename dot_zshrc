@@ -4,10 +4,12 @@
 eval "$(sheldon source)"
 
 # load sources
-typeset -a sources
-sources+="$HOME/.config/zsh/chezmoi.zsh"
+SOURCES=(
+    "chezmoi"
+)
 
-for file in $sources[@]; do
+for FILE ($SOURCES); do
+    SRC="$HOME/.config/zsh/$FILE.zsh"
     if [[ -a "$file" ]]; then
         source "$file"
     fi

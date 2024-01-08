@@ -2,8 +2,11 @@ shell = "zsh"
 
 [plugins]
 
-[plugins.autosuggestions]
+[plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
 
-[plugins.syntax_highlighting]
+[plugins.zsh-history-substring-search]
+github = "zsh-users/zsh-history-substring-search"
+
+[plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
