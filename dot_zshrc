@@ -3,6 +3,16 @@
 # init sheldon (package manager)
 eval "$(sheldon source)"
 
+# load sources
+typeset -a sources
+sources+="~/.config/zsh/chezmoi.zsh"
+
+for file in $aliases[@]; do
+    if [[ -a "$file" ]]; then
+        source "$file"
+    fi
+done
+
 # environment variables
 export EDITOR='/usr/local/bin/code -w'
 
