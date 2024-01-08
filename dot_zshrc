@@ -7,7 +7,7 @@ eval "$(sheldon source)"
 typeset -a sources
 sources+="~/.config/zsh/chezmoi.zsh"
 
-for file in $aliases[@]; do
+for file in $sources[@]; do
     if [[ -a "$file" ]]; then
         source "$file"
     fi
