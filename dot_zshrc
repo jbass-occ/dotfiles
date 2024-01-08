@@ -3,6 +3,9 @@
 # init sheldon (package manager)
 eval "$(sheldon source)"
 
+# environment variables
+export EDITOR='/usr/local/bin/code -w'
+
 # PATH modifications
 export PATH="$PATH:/Users/jbassin/Library/Application Support/JetBrains/Toolbox/scripts"
 
