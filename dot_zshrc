@@ -20,6 +20,10 @@ for FILE ($SOURCES); do
     fi
 done
 
+# load history tools
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(atuin init zsh)"
+
 # environment variables
 export EDITOR='/usr/local/bin/code -w'
 
@@ -36,3 +40,4 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
