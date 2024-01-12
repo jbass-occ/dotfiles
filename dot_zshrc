@@ -30,6 +30,9 @@ export EDITOR='/usr/local/bin/code -w'
 # PATH modifications
 export PATH="$PATH:/Users/jbassin/Library/Application Support/JetBrains/Toolbox/scripts"
 
+# aliases
+alias ls='eza --long --classify --icons always --all --all --group-directories-first --header --total-size --git --git-repos'
+
 # Evals
 eval "$(/opt/homebrew/bin/brew shellenv)"
 . "$HOME/.cargo/env"
