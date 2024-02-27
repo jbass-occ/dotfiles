@@ -1,0 +1,34 @@
+[user]
+	name = Josh Bassin
+	email = joshua.bassin@getfliff.com
+[merge]
+	conflictstyle = zdiff3
+[rebase]
+	autostash = true
+[push]
+	default = current
+[init]
+	defaultBranch = main
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+[help]
+	autocorrect = immediate
+[core]
+	pager = delta
+	editor = code
+[interactive]
+	diffFilter = delta
+[delta]
+	navigate = true
+	light = false
+[diff]
+	algorithm = histogram
+	colorMoved = default
+[branch]
+	sort = -committerdate
+[fetch]
+	prune = true
+[log]
+	date = iso
