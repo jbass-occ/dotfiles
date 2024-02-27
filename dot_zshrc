@@ -31,6 +31,7 @@ export EDITOR='/usr/local/bin/code -w'
 
 # PATH modifications
 export PATH="$PATH:/Users/jbassin/Library/Application Support/JetBrains/Toolbox/scripts"
+export PATH="/Users/jbassin/go/bin:$PATH"
 
 # aliases
 alias ls='eza --long --classify --icons always --all --all --group-directories-first --header'
@@ -54,3 +55,7 @@ export PATH="/Users/jbassin/.local/bin:$PATH"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
